@@ -1,0 +1,391 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: "Gilroy";
+  src: url("../../fonts/Gilroy/Gilroy Bold/fonts/Gilroy-Bold.eot");
+  src: local("☺"), url("../../fonts/Gilroy/Gilroy Bold/fonts/Gilroy-Bold.woff") format("woff"), url("../../fonts/Gilroy/Gilroy Bold/fonts/Gilroy-Bold.ttf") format("truetype"), url("../../fonts/Gilroy/Gilroy Bold/fonts/Gilroy-Bold.svg") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../../fonts/Gilroy/Gilroy Medium/fonts/Gilroy-Medium.eot");
+  src: local("☺"), url("../../fonts/Gilroy/Gilroy Medium/fonts/Gilroy-Medium.woff") format("woff"), url("../../fonts/Gilroy/Gilroy Medium/fonts/Gilroy-Medium.ttf") format("truetype"), url("../../fonts/Gilroy/Gilroy Medium/fonts/Gilroy-Medium.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../../fonts/Gilroy/Gilroy Regular/fonts/Gilroy-Regular.eot");
+  src: local("☺"), url("../../fonts/Gilroy/Gilroy Regular/fonts/Gilroy-Regular.woff") format("woff"), url("../../fonts/Gilroy/Gilroy Regular/fonts/Gilroy-Regular.ttf") format("truetype"), url("../../fonts/Gilroy/Gilroy Regular/fonts/Gilroy-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "HeliosBlackC";
+  src: url("../../fonts/HeliosBlackC/fonts/heliosblackc.eot");
+  src: local("☺"), url("../../fonts/HeliosBlackC/fonts/heliosblackc.woff") format("woff"), url("../../fonts/HeliosBlackC/fonts/heliosblackc.ttf") format("truetype"), url("../../fonts/HeliosBlackC/fonts/heliosblackc.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "HeliosExtBlackC";
+  src: url("../../fonts/HeliosExtBlackC/fonts/heliosextblackc.eot");
+  src: local("☺"), url("../../fonts/HeliosExtBlackC/fonts/heliosextblackc.woff") format("woff"), url("../../fonts/HeliosExtBlackC/fonts/heliosextblackc.ttf") format("truetype"), url("../../fonts/HeliosExtBlackC/fonts/heliosextblackc.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "HeliosExtC";
+  src: url("../../fonts/HeliosExtC/fonts/HeliosExtC Bold.eot");
+  src: local("☺"), url("../../fonts/HeliosExtC/fonts/HeliosExtC Bold.woff") format("woff"), url("../../fonts/HeliosExtC/fonts/HeliosExtC Bold.ttf") format("truetype"), url("../../fonts/HeliosExtC/fonts/HeliosExtC Bold.svg") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mandatory Plaything";
+  src: url("../../fonts/Mandatory/fonts/Mandatory Plaything.eot");
+  src: local("☺"), url("../../fonts/Mandatory/fonts/Mandatory Plaything.woff") format("woff"), url("../../fonts/Mandatory/fonts/Mandatory Plaything.ttf") format("truetype"), url("../../fonts/Mandatory/fonts/Mandatory Plaything.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../../fonts/Source Sans Pro/fonts/SourceSansPro-Regular.eot");
+  src: local("☺"), url("../../fonts/Source Sans Pro/fonts/SourceSansPro-Regular.woff") format("woff"), url("../../fonts/Source Sans Pro/fonts/SourceSansPro-Regular.ttf") format("truetype"), url("../../fonts/Source Sans Pro/fonts/SourceSansPro-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SparTakus";
+  src: url("../../fonts/SparTakus/fonts/SparTakus.eot");
+  src: local("☺"), url("../../fonts/SparTakus/fonts/SparTakus.woff") format("woff"), url("../../fonts/SparTakus/fonts/SparTakus.ttf") format("truetype"), url("../../fonts/SparTakus/fonts/SparTakus.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../../fonts/Plus Jakarta Sans/Plus Jakarta Sans Light/fonts/PlusJakartaSans-Light.eot");
+  src: local("☺"), url("../../fonts/Plus Jakarta Sans/Plus Jakarta Sans Light/fonts/PlusJakartaSans-Light.woff") format("woff"), url("../../fonts/Plus Jakarta Sans/Plus Jakarta Sans Light/fonts/PlusJakartaSans-Light.ttf") format("truetype"), url("../../fonts/Plus Jakarta Sans/Plus Jakarta Sans Light/fonts/PlusJakartaSans-Light.svg") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../../fonts/Plus Jakarta Sans/Plus Jakarta Sans Regular/fonts/PlusJakartaSans-Regular.eot");
+  src: local("☺"), url("../../fonts/Plus Jakarta Sans/Plus Jakarta Sans Regular/fonts/PlusJakartaSans-Regular.woff") format("woff"), url("../../fonts/Plus Jakarta Sans/Plus Jakarta Sans Regular/fonts/PlusJakartaSans-Regular.ttf") format("truetype"), url("../../fonts/Plus Jakarta Sans/Plus Jakarta Sans Regular/fonts/PlusJakartaSans-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../../fonts/Plus Jakarta Sans/Plus Jakarta Sans Medium/fonts/PlusJakartaSans-Medium.eot");
+  src: local("☺"), url("../../fonts/Plus Jakarta Sans/Plus Jakarta Sans Medium/fonts/PlusJakartaSans-Medium.woff") format("woff"), url("../../fonts/Plus Jakarta Sans/Plus Jakarta Sans Medium/fonts/PlusJakartaSans-Medium.ttf") format("truetype"), url("../../fonts/Plus Jakarta Sans/Plus Jakarta Sans Medium/fonts/PlusJakartaSans-Medium.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../../fonts/Plus Jakarta Sans/Plus Jakarta Sans Bold/fonts/PlusJakartaSans-Bold.eot");
+  src: local("☺"), url("../../fonts/Plus Jakarta Sans/Plus Jakarta Sans Bold/fonts/PlusJakartaSans-Bold.woff") format("woff"), url("../../fonts/Plus Jakarta Sans/Plus Jakarta Sans Bold/fonts/PlusJakartaSans-Bold.ttf") format("truetype"), url("../../fonts/Plus Jakarta Sans/Plus Jakarta Sans Bold/fonts/PlusJakartaSans-Bold.svg") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+body {
+  height: 100%;
+  font-family: "HeliosExtC", sans-serif;
+  font-weight: bold;
+  background: #090812;
+}
+body.lock {
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  overflow-y: hidden;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+div[class$=__container] {
+  max-width: 1686px;
+  margin: 0 auto;
+  padding: 0px 25px;
+}
+
+.button {
+  background: linear-gradient(98.73deg, #7A42F4 0%, #4642F4 100%), #FFFFFF;
+  border-radius: 6px;
+  font-family: "HeliosBlackC";
+  color: #FFFFFF;
+  display: inline-block;
+}
+
+.title {
+  font-size: 45px;
+  line-height: 109%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.description {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 20;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 110px;
+}
+.header__logo {
+  position: relative;
+  z-index: 25;
+}
+.header__logo picture img {
+  width: 28px;
+  height: 28px;
+}
+.header__menu {
+  font-family: "Plus Jakarta Sans";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 1000px) {
+  .header__menu {
+    position: fixed;
+    left: 0;
+    top: -100vh;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    background: #090812;
+    padding: 140px 20px 0px;
+    transition: top 1s ease;
+    overflow: hidden;
+    background: url("../../img/header/menu.png") no-repeat center;
+    background-size: cover;
+  }
+  .header__menu.active {
+    top: 0;
+  }
+}
+.header__menu-list {
+  display: flex;
+}
+@media screen and (max-width: 1000px) {
+  .header__menu-list {
+    display: block;
+  }
+}
+.header__menu-item {
+  margin-right: 45px;
+}
+.header__menu-item:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 1000px) {
+  .header__menu-item {
+    margin-bottom: 40px;
+    margin-right: 0;
+  }
+  .header__menu-item:last-child {
+    margin-bottom: 0;
+  }
+}
+.header__menu-link {
+  color: inherit;
+  opacity: 0.7;
+}
+.header__menu-link.active {
+  opacity: 1;
+  position: relative;
+}
+.header__menu-link.active::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 50%;
+  background: #00DBDE;
+  box-shadow: 0px 0px 7px rgba(41, 183, 227, 0.33);
+  height: 2px;
+  border-radius: 20px;
+}
+.header.active .header__menu-circle {
+  background: #7A59FF;
+  width: 229px;
+  height: 229px;
+  border-radius: 50%;
+  position: absolute;
+  left: -81px;
+  top: 6px;
+  filter: blur(465.789px);
+  z-index: -1;
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .header.active .header__menu-circle {
+    display: block;
+  }
+}
+.header.active .header__menu-oval {
+  background: linear-gradient(90deg, rgba(0, 219, 222, 0.3) 0%, rgba(252, 0, 255, 0.3) 100%);
+  opacity: 0.5;
+  filter: blur(205.034px);
+  width: 512.06px;
+  height: 394.66px;
+  position: absolute;
+  right: -200px;
+  bottom: 70px;
+  transform: rotate(-28.71deg);
+}
+.header__burger {
+  position: relative;
+  width: 32px;
+  height: 16px;
+  display: none;
+  z-index: 25;
+}
+@media screen and (max-width: 1000px) {
+  .header__burger {
+    display: block;
+  }
+}
+.header__burger span {
+  height: 2px;
+  background: #FFFFFF;
+  position: absolute;
+  border-radius: 10px;
+}
+.header__burger span:nth-child(1) {
+  width: 100%;
+  top: 0;
+  right: 0;
+  transition: transform 0.5s ease, top 0.5s ease 0.5s;
+}
+.header__burger span:nth-child(2) {
+  width: 19px;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  transition: width 0.5s ease 0.5s;
+}
+.header__burger span:nth-child(3) {
+  width: 25px;
+  bottom: 0;
+  right: 0;
+  transition: transform 0.5s ease, bottom 0.5s ease 0.5s, width 0.5s linear 0.5s;
+}
+.header__burger.active span:nth-child(1) {
+  transform: translate(0, -50%) rotate(45deg);
+  width: 100%;
+  top: 50%;
+  transition: width 0.5s ease, top 0.5s ease, transform 0.5s ease 0.5s;
+}
+.header__burger.active span:nth-child(2) {
+  width: 100%;
+  width: 0;
+  transition: width 0.5s ease;
+}
+.header__burger.active span:nth-child(3) {
+  transform: translate(0, 50%) rotate(-45deg);
+  bottom: 50%;
+  width: 100%;
+  transition: width 0.5s ease, bottom 0.5s ease, transform 0.5s ease 0.5s;
+}

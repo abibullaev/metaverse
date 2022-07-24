@@ -1,0 +1,52 @@
+body{
+    height: 100%;
+    font-family: "HeliosExtC", sans-serif;
+    font-weight: bold;
+    background: #090812;
+    
+    &.lock{
+        overflow: hidden;
+    }
+}
+
+.wrapper{
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+
+.main{
+    flex: 1 1 auto;
+}
+
+div[class$="__container"]{
+    max-width: 1686px;
+    margin: 0 auto;
+    padding: 0px 25px; 
+}
+
+.button{
+    background: linear-gradient(98.73deg, #7A42F4 0%, #4642F4 100%), #FFFFFF;
+    border-radius: 6px;
+    font-family: "HeliosBlackC";
+    color: #FFFFFF;
+    display: inline-block;
+}
+
+.title{
+    font-size: 45px;
+    line-height: 109%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.description{
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
